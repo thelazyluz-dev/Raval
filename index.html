@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <title>Fixluz</title>
+
+    <link rel="icon" type="image/svg+xml" href="icon.svg" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#1B2B45" />
+
+    <!-- אייפון לא קורא את ה-manifest להתקנה למסך הבית; הוא צריך את התגיות האלה -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Fixluz" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Heebo ולא Rubik: לרוביק צורות מעוגלות שנתפסות "רכות"; Heebo בנוי על
+         שלד Roboto ומרונדר חד על מסכי מפעל — קריא יותר לעובדים מבוגרים -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/Raval/assets/index-BqO15kcC.js"></script>
+    <link rel="modulepreload" crossorigin href="/Raval/assets/Logo-B51FfPb9.js">
+    <link rel="stylesheet" crossorigin href="/Raval/assets/index-DQGvXk7P.css">
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- שחזור נתיב אחרי מעבר דרך 404.html של GitHub Pages.
+         Pages לא יודע לנתב נתיבים של SPA, אז הוא מגיש 404 שמעביר לשורש
+         הסביבה עם הנתיב המקורי בשאילתה. כאן מחזירים אותו לכתובת, לפני
+         שהראוטר עולה, כדי שהמשתמש לא יראה קפיצה. -->
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search)
+        var path = params.get('p')
+        if (!path) return
+
+        params.delete('p')
+        var query = params.toString()
+        var base = window.location.pathname.replace(/\/?$/, '/')
+
+        window.history.replaceState(
+          null,
+          '',
+          base + path.replace(/^\//, '') + (query ? '?' + query : '') + window.location.hash,
+        )
+      })()
+    </script>
+
+  </body>
+</html>

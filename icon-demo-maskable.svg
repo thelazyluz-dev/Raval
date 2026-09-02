@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>Fixluz</title>
+  <rect width="512" height="512" fill="#1B2B45"/>
+  <rect x="10" y="10" width="492" height="492" fill="none" stroke="#D89A45" stroke-width="20" rx="8"/>
+  <path d="M 342.6 239.5 L 369.4 243.8 L 369.4 268.2 L 342.6 272.5 L 335.8 293.5 L 354.8 312.8 L 340.6 332.5 L 316.3 320.3 L 298.5 333.3 L 302.6 360.0 L 279.5 367.6 L 267.0 343.5 L 245.0 343.5 L 232.5 367.6 L 209.4 360.0 L 213.5 333.3 L 195.7 320.3 L 171.4 332.5 L 157.2 312.8 L 176.2 293.5 L 169.4 272.5 L 142.6 268.2 L 142.6 243.8 L 169.4 239.5 L 176.2 218.5 L 157.2 199.2 L 171.4 179.5 L 195.7 191.7 L 213.5 178.7 L 209.4 152.0 L 232.5 144.4 L 245.0 168.5 L 267.0 168.5 L 279.5 144.4 L 302.6 152.0 L 298.5 178.7 L 316.3 191.7 L 340.6 179.5 L 354.8 199.2 L 335.8 218.5 Z" fill="#3B6AA0" stroke="#3B6AA0" stroke-width="10.64" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="256" cy="256" r="73.0" fill="#1B2B45"/>
+  <circle cx="256" cy="256" r="54.7" fill="#D89A45"/>
+  <path d="M 227.1 257.2 L 250.2 276.2 L 284.9 235.8" fill="none" stroke="#1B2B45" stroke-width="18.240000000000002" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

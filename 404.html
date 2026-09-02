@@ -1,0 +1,9 @@
+<!doctype html><meta charset="utf-8"><title>Fixluz</title>
+<script>
+  (function () {
+    var demo = '/Raval/demo/';
+    var root = location.pathname.indexOf(demo) === 0 ? demo : '/Raval/';
+    var rest = location.pathname.slice(root.length);
+    location.replace(root + '?p=' + encodeURIComponent(rest) + location.search.replace('?', '&') + location.hash);
+  })();
+</script>
